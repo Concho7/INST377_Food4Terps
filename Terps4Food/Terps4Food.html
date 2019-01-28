@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<php>
+<title>Terps4Food.css </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Geogia Bold", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("Terps4Food.jpg");
+    min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container" id="home">
+  <div class="w3-display-bottomleft">
+  </div>
+  <div class="terps-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:200px">Terps<br>4FOOD</span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
+  </div>
+</header>
+
+<!-- Menu Container and login -->
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+  <div class="w3-content">
+
+    <h1 class="w3-center w3-large" style="margin-bottom:64px">Terps4Food's mission is to provide affordable food purchases to any fearless terp.</h1>
+    img
+
+    <form action="login.php" method="post" class="w3-container w3-medium w3-padding-24 w3-round">
+    <br>
+
+<h1 class "w3-container w3-right">Existing User</h1>
+      <h1 class "w3-container w3-right"> University ID</h1> <span><input class = "w3-input w3-right" type "text" style="width:20%"></span></h1>
+        <input class = "w3-input w3-bottomleft" type="text" style="width:30%" value="UserName" name = "User"></input>
+        <input class = "w3-input w3-bottomleft" type="text"  style="width:30%" value="PassWord" name = "Pass"></input>
+      <input class = "w3-button w3-left w3-white w3-panel w3-topbar w3-bottombar w3-border-grey" input type="button" value="submit" name="submit"></input>
+
+    </form>
+
+<!--
+<?php
+     mysql_connect("localhost","root","");
+     mysql_select_db("mydb"); //our database name is add here
+
+     if(isset($_POST['submit']))
+     {
+       $User = $_POST['User'];
+       $Pass = $_POST['Pass'];
+
+       $query = "Insert into Login(Username,Password) values ('$User', ''$Pass')";
+       if(mysql_query($query)) //run the query
+       {
+         echo "your log is inserted in the database";
+       }
+     }
+?>
+-->
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Special Week</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">All Of The Restaurants</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Happy Hour Throughout the Week</div>
+      </a>
+    </div>
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>LOTSA</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -10 Points</span> </h1>
+      <p class="w3-text-grey">description</p>
+      <hr>
+
+      <h1><b>Chick Fil A</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -12 Points</span> </h1>
+      <p class="w3-text-grey">description</p>
+      <hr>
+
+      <h1><b>Apple Bees</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -20 Points</span> </h1>
+      <p class="w3-text-grey">description</p>
+      <hr>
+
+      <h1><b>CornerStone</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -10 Points</span> </h1>
+      <p class="w3-text-grey">description</p>
+      <hr>
+
+
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Chick Fil a</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-20 Points"> -10 Points</span>  </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <h1><b>Marathon Deli </b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-25 Points"> -10 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <h1><b>Lotsa</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-40 Points"> -10 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <h1><b>Ivy Noodles</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-40 Points"> -10 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <h1><b>chipotle</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -50 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Kangnam BBQ</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -80 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Jason's Deli</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -20 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Panda Express</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -30 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Moby Dick</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -20 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Taco Bell</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -30 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Kung Fu Tea</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -35 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Subway</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -20 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+
+      <h1><b>Pho D'lite</b> <span input type = "button" class="w3-btn w3-right w3-tag w3-black" value = "-10 Points"> -45 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b>Looney's Pub</b> <span input type = "button" class="w3-button w3-right w3-tag w3-black" value = "-10 Points"> -6 Points</span></h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <h1><b>CornerStone</b> <span input type = "button" class="w3-button w3-right w3-tag w3-black" value = "-10 Points"> -8 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <h1><b>Terrapin's Turf</b> <span input type = "button" class="w3-button w3-right w3-tag w3-black" value = "-10 Points"> -12 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+      <hr>
+
+      <h1><b>RJ Bentley's</b> <span input type = "button" class="w3-button w3-right w3-tag w3-black" value = "-10 Points"> -10 Points</span> </h1>
+      <p class="w3-text-grey">Description</p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- About Container -->
+
+
+<!-- Image of location/map -->
+
+<!-- Contact -->
+
+
+<!-- Footer -->
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
